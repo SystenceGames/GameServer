@@ -1,0 +1,49 @@
+﻿doctype html
+html
+  head
+    title Admin Page
+    //link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    table(border=1)
+      tr
+        td ProcessId
+        td Command Line
+        td Port
+        td Kill Process
+        td Kill jobID
+        td Display Log
+      for val in commands
+        tr
+          td= val.processId
+          td= val.command
+          td= val.port
+          td
+            a(target="_blank", href="/killProcessManually?pid=#{val.processId}") Kill Process
+          td
+            a(target="_blank", href="/killJobManually?jobID=#{val.jobID}") Kill jobID
+          td
+            a(target="_blank", href="/displayLog?port=#{val.port}") View Log
+    p version 11.29.2014.1
+    p public port #{PublicPort}, Direct Port #{DirectPort}
+    div ============== Manual patching ==============
+        form(method='post',action='/patchManually')
+            label(form='path') Patch Path:
+            input(type='text',name='patchpath',id='patchpath', value='http://patches.maestrosgame.com/tm-weekly/', style='width:25em')  
+            input(type='submit',name='submit',value='Submit').submit-button
+    div ===========enableAndConfigure==============
+        form(method='post',action='/enableAndConfigure')
+            p patchline (release, dev, etc.):
+                input(type='text',name='patchLine',id='patchLine', value='#{patchLine}', style='width:10em')
+            p queueURL: 
+                input(type='text',name='queueURL',id='queueURL', value='#{queueURL}', style='width:25em')
+            p serverAddress (eg. maestros-s.cloudapp.net):
+                input(type='text',name='serverAddress',id='serverAddress', value='#{serverAddress}', style='width:25em')
+            p publicPorts eg([25000,25001]):
+                input(type='text',name='publicPorts',id='publicPorts', value='#{publicPorts}', style='width:25em')
+            input(type='submit',name='submit',value='Submit').submit-button
+    div =============Disable====================
+        form(method='post',action='/disable')
+            input(type='submit',name='Disable',value='Disable').submit-button
+        
+    div ============= GameServer Status Dump ==============
+        pre #{GameServer}

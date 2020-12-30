@@ -1,0 +1,86 @@
+{
+  "port": {
+    "type": "TCP",
+    "Port": 80
+  },
+  "publicPort1": {
+    "type": "UDP",
+    "Port": 25000
+  },
+  "publicPort2": {
+    "type": "UDP",
+    "Port": 25001
+  },
+  "publicPort3": {
+    "type": "UDP",
+    "Port": 25002
+  },
+  "publicPort4": {
+    "type": "UDP",
+    "Port": 25003
+  },
+  "publicPort5": {
+    "type": "UDP",
+    "Port": 25004
+  },
+  "publicPort6": {
+    "type": "UDP",
+    "Port": 25005
+  },
+  "publicPort7": {
+    "type": "UDP",
+    "Port": 25006
+  },
+  "publicPort8": {
+    "type": "UDP",
+    "Port": 25007
+  },
+  "publicPort9": {
+    "type": "UDP",
+    "Port": 25008
+  },
+  "publicPort10": {
+    "type": "UDP",
+    "Port": 25009
+  },
+  "loadTest1": {
+    "type": "TCP",
+    "Port": 25000
+  },
+  "loadTest2": {
+    "type": "TCP",
+    "Port": 25001
+  },
+  "loadTest3": {
+    "type": "TCP",
+    "Port": 25002
+  },
+  "loadTest4": {
+    "type": "TCP",
+    "Port": 25003
+  },
+  "loadTest5": {
+    "type": "TCP",
+    "Port": 25004
+  },
+  "loadTest6": {
+    "type": "TCP",
+    "Port": 25005
+  },
+  "loadTest7": {
+    "type": "TCP",
+    "Port": 25006
+  },
+  "loadTest8": {
+    "type": "TCP",
+    "Port": 25007
+  },
+  "loadTest9": {
+    "type": "TCP",
+    "Port": 25008
+  },
+  "loadTest10": {
+    "type": "TCP",
+    "Port": 25009
+  }
+}

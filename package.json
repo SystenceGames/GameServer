@@ -1,0 +1,39 @@
+{
+  "name": "GameServer",
+  "version": "0.0.0",
+  "description": "GameServer",
+  "main": "app.js",
+  "author": {
+    "name": "Systence Games",
+    "email": "tinkermeisters@maestrosgame.com"
+  },
+  "dependencies": {
+    "@types/async": "2.0.40",
+    "@types/express": "4.0.35",
+    "@types/form-data": "0.0.33",
+    "@types/mocha": "2.2.41",
+    "@types/nconf": "0.0.34",
+    "@types/node": "^6.0.73",
+    "@types/q": "1.0.0",
+    "@types/request": "2.0.11",
+    "@types/should": "8.3.0",
+    "@types/sinon": "2.2.1",
+    "amqplib": "0.5.1",
+    "async": "2.4.0",
+    "body-parser": "1.17.1",
+    "express": "4.15.2",
+    "jade": "1.11.0",
+    "morgan": "1.8.1",
+    "nconf": "0.8.4",
+    "q": "1.5.0",
+    "request": "2.81.0",
+    "serve-favicon": "2.4.2",
+    "winston": "2.3.1",
+    "winston-graylog2": "0.6.0"
+  },
+  "devDependencies": {
+    "mocha": "3.1.2",
+    "should": "11.2.1",
+    "sinon": "2.2.0"
+  }
+}
